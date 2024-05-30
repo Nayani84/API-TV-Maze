@@ -27,7 +27,7 @@ async function getShowsByTerm(term) {
       id: show.id,
       name: show.name,
       summary: show.summary === null ? "No summary" : show.summary,
-      image: show.image.original ? show.image.medium : "https://tinyurl.com/tv-missing"
+      image: show.image ? show.image.medium : "https://tinyurl.com/tv-missing"
     };
   });
 
